@@ -4,6 +4,7 @@
     "displayName": "Autonome TV app",
     "cordova": {
         "platforms": [
+            "android",
             "browser"
         ],
         "plugins": {
@@ -17,11 +18,15 @@
             "cordova-plugin-inappbrowser": {},
             "cordova-plugin-media-capture": {},
             "cordova-plugin-network-information": {},
-            "cordova-plugin-vibration": {}
+            "cordova-plugin-vibration": {},
+            "cordova-plugin-autostart": {},
+            "cordova-plugin-whitelist": {}
         }
     },
     "dependencies": {
+        "cordova-android": "^6.2.3",
         "cordova-browser": "~4.1.0",
+        "cordova-plugin-autostart": "git+https://github.com/ToniKorin/cordova-plugin-autostart.git",
         "cordova-plugin-battery-status": "~1.2.4",
         "cordova-plugin-camera": "~2.4.1",
         "cordova-plugin-device": "~1.1.6",
@@ -32,6 +37,7 @@
         "cordova-plugin-inappbrowser": "~1.7.1",
         "cordova-plugin-media-capture": "~1.4.3",
         "cordova-plugin-network-information": "~1.3.3",
-        "cordova-plugin-vibration": "~2.1.5"
+        "cordova-plugin-vibration": "~2.1.5",
+        "cordova-plugin-whitelist": "^1.3.4"
     }
 }
